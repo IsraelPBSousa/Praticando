@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+            header {
+                background-color: #363636;
+                color: white;
+                height: 60px;
+            }
+            header .logo {
+            }
+            header .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+            header ul {
+                list-style-type: none;
+            }
+            header ul li {
+                display: inline-block;
+                margin-left: 14px;
+                font-size: 14px;
+            }
+            header nav {
+                display: none;
+            }
+            section.hero {
+                background-image: url(imagem/lobo3.jpg);
+                height: 500px;
+                background-size: cover;
+                background-position: center center;
+            }
+            section.hero {
+                color: white;
+            }
+            section.hero h2 {
+                margin: 0px;
+                font-size: 32px;
+            }
+            section.hero p {
+                margin: 8px 0;
+                max-width: 300px;
+                font-size: 14px;
+            }
+            section.hero .container {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: normal;
+                justify-content: center;
+            }
+            section.products {
+                padding: 40px 0;
+            }
+            section.products .container{
+                display: flex;
+                justify-content:space-between;
+                flex-direction: column;
+            }
+            section.products .product{
+                background-color: lightgray;
+                height: 200px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .container {
+                width: 100%;
+                max-width: 100%;
+                margin: auto;
+                padding: 0 15px;
+                box-sizing: border-box;
+                /* border: 1px solid yellow;  */
+            }
+            @media screen and (min-width: 576px) {
+            .container {
+                max-width: 540px;
+                padding: 0px;
+                }
+            header .container {
+                justify-content: space-between;
+                }
+            header nav {
+                display: block;
+                }
+            section.products .container{
+                flex-direction: row;
+                }
+            section.products .product{
+                width: 33%;
+                margin-bottom: 0;
+                }
+            }
+            @media screen and (min-width: 768px) {
+               .container {
+                    max-width: 720px;
+               }
+            }
+            @media screen and (min-width: 992px) {
+               .container {
+                max-width: 960px;
+                }
+            }
+            @media screen and (min-width: 1200px) {
+               .container {
+                max-width: 1140px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <img class="logo" src="imagem/favicon.ico" alt="">
+                <nav>
+                    <ul>
+                        <li>Blog</li>
+                        <li>Cursos</li>
+                        <li>Blog</li>
+                        <li>Nesletter</li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="hero">
+                <div class="container">
+                    <h2>Aprenda Desenvolvimento Web</h2>
+                    <p>Cursos de HTML, CSS, Javascript, PHP, Sass e muito mais!</p>
+                    <button>Saiba mais</button>
+                </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <div class="product">1</div>
+                    <div class="product">2</div>
+                    <div class="product">3</div>
+                </div>
+            </section>
+        </header>
+    </body>
+</html>

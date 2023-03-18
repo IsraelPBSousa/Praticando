@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {
+    padding-bottom: 500px;
+}
+.container {
+    background-color: #EEF;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    /* alinhamento horizontal */
+    justify-content: space-between;
+    /* alinhamento vertical */
+    align-items: center;
+    /* obedece o largura do elemento fazendo se repetirem abaixo da linha
+    flex-wrap: wrap; */
+}
+.item {
+    background-color: #CCC;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;  
+}
+.box {
+    background-color: #CCC;
+    border: 2px solid blue;
+    height: 50px;
+    /*flex-basis: 50px;
+     todos os elementos tem como base 100px de largura */
+   
+
+    /*shorthand para item*/
+    flex: 1 1 50px; 
+    /*flex-grow: 1 flex-shrink: 1 flex-basis:100  */
+}
+/*
+#item-1 {
+    flex-grow: 2;
+     como o item vai crescer no layout, diminuindo proporcionalmente ( nesse caso ocupa o dobro da área dele 
+}
+#item-2,
+#item-3 {
+    flex-grow: 1;
+     nesse aquiestar ocupando a metade da área dele 
+}
+#item-2 {
+    flex-basis: 100px;
+     quando colocado o flex-basis a propriedade do flex-grow é desconsiderada para esse elemento
+}
+#item-3 {
+    flex-shrink: 2;
+     item diminui disproporcional na tela
+}
+*/
+
+#item-2 {
+    order:1;
+}
+#item-3 {
+    order:2;
+}
+#item-1 {
+    order:3;
+}
