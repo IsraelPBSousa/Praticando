@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zodiaco.css">
+</head>
+<body>
+    <section>
+        <h1>Descubra seu Signo</h1>
+        <div id="container">
+            <h2>Colque o mês e o dia do seu nascimento</h2>
+            <div >
+                <label for="dia">Dia</label>
+                <input type="number" name="dia" id="dia"><br>
+                <label for="mes">Mês</label>
+                <input type="number" name="mes" id="mes">
+            </div>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+            <div id="res">
+                resultado
+            </div>
+            <div id="foto"></div>
+            <img src="capa.jpg" alt="capa inicial" id="capa">
+        </div>
+    <script src="zodiaco.js"></script>
+</body>
+</html>
