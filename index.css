@@ -44,7 +44,7 @@ header {
     padding-left: 15px;
 }
 
-main div.fundsec1 {
+.fundsec1 {
     display: flex;
     width: 100%;
     height: 500px;
@@ -52,12 +52,10 @@ main div.fundsec1 {
     background-color: #a8dadc;
     color: #1d3557;
 }
-
-main .sec1 {
+.sec1 {
     width: 800px;
     margin: auto;
 }
-
 main h1 {
     text-align: left;
     font-size: 2.1em;
@@ -80,44 +78,28 @@ main .butt1 {
     font-weight: bolder;
 }
 
-main .fundsec2 {
-    background-color: #a8dadc;
-    max-width: 100%;
-    height: 100%;
-    margin: 0px 15px;
+div.fundsec2 {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #a8dadc;
     flex-wrap: wrap;
 }
 
-main .fundsec2 .childen2 {
-    width: 25%;
-    max-width: 244px;
-    min-width: 244px;
-    height: 244px;
-    padding: 15px;
+.childen2 {
+    width: 24%;
+    min-width: 350px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.childen2 p {
+    min-width: ;
+    
+    
 }
 
-main .fundsec2 .childen2 h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
 
-main .fundsec2 .childen2 p {
-    width: 80%;
-    font-size: .9em;
-    margin-bottom: 10px;
-}
-
-main .fundsec2 .childen2 .butt2 {
-    background-color: #e63946;
-    border: none;
-    border-radius: 4px;
-    padding: 5px;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 20px;
-    align-items: normal;
-}
 .item2cor1 {
     background-color: #1d3557;
     color: white;
